@@ -1,13 +1,10 @@
+
 <?php
-$file = 'coba.pdf';
-if (file_exists($file)) {
-    header('Content-Description: File Transfer');
+header("Content-type:application/pdf");
 
-    header('Content-Disposition: attachment;');
-    header('Expires: 0');
-    header('Cache-Control: must-revalidate');
-    header('Pragma: public');
+// It will be called downloaded.pdf
+header("Content-Disposition:attachment;filename='downloaded.pdf'");
 
-    readfile($file);
-    exit;
-}
+// The PDF source is in original.pdf
+readfile("coba.pdf");
+?>
