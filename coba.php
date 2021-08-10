@@ -7,4 +7,3 @@ header("Content-Disposition:attachment;filename='coba.pdf'");
 
 // The PDF source is in original.pdf
 readfile(__DIR__, "coba.pdf");
-?>
