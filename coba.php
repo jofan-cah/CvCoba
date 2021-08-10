@@ -6,5 +6,5 @@ header("Content-type:application/pdf");
 header("Content-Disposition:attachment;filename='coba.pdf'");
 
 // The PDF source is in original.pdf
-readfile("coba.pdf");
+readfile(__DIR__, "coba.pdf");
 ?>
